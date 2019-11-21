@@ -121,3 +121,23 @@ a.button-banner{
   text-transform: uppercase;
   color: white;
 }
+
+.banner-top{
+  position: relative;
+  height: 170px;
+  line-height: 40px;
+  background-color: #D3D3D3;
+}
+
+.text-topbanner{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.h3-topbanner{
+  color: #a5a5a5;
+}
