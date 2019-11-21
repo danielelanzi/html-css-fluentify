@@ -11,6 +11,18 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* clearfix main */
+main::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* colore testo paragrafi */
+p{
+  color: #7F7F7F;
+}
+
 /* colore e bordi dei bottoni verdi */
 .button-green{
   display: inline;
@@ -96,7 +108,7 @@ a.button-top{
   margin-right: 20px;
 }
 
-/* banner */
+/* banner dell'header */
 .banner{
   position: relative;
   height: 470px;
@@ -122,6 +134,7 @@ a.button-banner{
   color: white;
 }
 
+/* top banner del main */
 .banner-top{
   position: relative;
   height: 170px;
@@ -140,4 +153,58 @@ a.button-banner{
 
 .h3-topbanner{
   color: #a5a5a5;
+}
+
+/* contenuto superiore del main (content1) */
+.content1{
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  background-color: brown;
+}
+
+.part1{
+  float: left;
+  height: 550px;
+  width: calc(100% / 3);
+  background-color: white;
+}
+
+.banner-content1{
+  position: relative;
+  margin-top: 40px;
+  height: 550px;
+  width: calc(100% / 3);
+  background-image: url(../img/profile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 30%;
+}
+
+.text-content1{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 25px;
+}
+
+h2.green{
+  margin-bottom: 80px;
+  color: #7CBB00;
+}
+
+
+/* linea divisoria */
+.divisor{
+  border-bottom: 4px solid black;
+}
+
+/* contenuto inferiore del main (content2) */
+.content2{
+  height: 450px;
+  margin: 0 auto;
+  background-color: brown;
 }
