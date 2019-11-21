@@ -1,0 +1,123 @@
+/* font importato da google fonts */
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* colore e bordi dei bottoni verdi */
+.button-green{
+  display: inline;
+  background-color: #7CBB00;
+  border-radius: 4px;
+}
+
+/* regola link bar */
+a.link-bar{
+  padding: 10px 10px;
+  display: inline;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* intestazione */
+header{
+  height: 550px;
+  background-color: rgb(12, 50, 89);
+  background-image:url("../img/oldman.png");
+  background-size: 70%;
+  background-position: 110% 110%;
+  background-repeat: no-repeat;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+}
+
+.header-top{
+  height: 80px;
+  line-height: 80px;
+}
+
+.header-top nav::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* barra di navigazione sinistra */
+.menu-left{
+  float: left;
+}
+
+.menu-left ul{
+  list-style: none;
+}
+
+.menu-left li{
+  display: inline;
+}
+
+/* posizionamento logo */
+.menu-left img{
+  vertical-align: middle;
+  margin-right: 40px;
+  margin-bottom: 13px;
+}
+
+/* barra di navigazione destra */
+.menu-right{
+  float: right;
+}
+
+.menu-right a:nth-child(2){
+  border: 1px solid white;
+  border-radius: 4px;
+  /* utilizzo di un padding interno */
+  padding: 10px 35px;
+}
+/* utilizzo di un padding con span (oppure regola precedente)
+span{
+  padding: 0 25px;
+} */
+
+a.button-top{
+  margin-right: 20px;
+}
+
+/* banner */
+.banner{
+  position: relative;
+  height: 470px;
+}
+
+.text-banner{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.text-banner h1{
+  font-size: 48px;
+  margin-bottom:48px;
+}
+
+a.button-banner{
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
