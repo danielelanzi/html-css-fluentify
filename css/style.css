@@ -12,7 +12,7 @@ body{
 }
 
 /* clearfix main */
-main::after{
+.clearfix::after{
   content: '';
   display: table;
   clear: both;
@@ -21,6 +21,8 @@ main::after{
 /* colore testo paragrafi */
 p{
   color: #7F7F7F;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /* colore e bordi dei bottoni verdi */
@@ -60,12 +62,6 @@ header{
 .header-top{
   height: 80px;
   line-height: 80px;
-}
-
-.header-top nav::after{
-  content: '';
-  display: table;
-  clear: both;
 }
 
 /* barra di navigazione sinistra */
@@ -135,76 +131,57 @@ a.button-banner{
 }
 
 /* top banner del main */
-.banner-top{
-  position: relative;
-  height: 170px;
-  line-height: 40px;
+.text-topbanner{
+  text-align: center;
+  padding: 30px;
   background-color: #D3D3D3;
 }
 
-.text-topbanner{
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.h3-topbanner{
+.text-topbanner h3{
   color: #a5a5a5;
+  margin-top: 5px;
 }
 
-/* contenuto superiore del main (content1) */
-.content1{
+/* contenuto superiore del main */
+.content-main{
   width: 80%;
-  height: 550px;
-  margin: 0 auto;
-  background-color: brown;
+  margin: 10px auto 30px;
 }
 
-.part1{
+.part{
   float: left;
-  height: 550px;
-  width: calc(100% / 3);
-  background-color: white;
-}
-
-.banner-content1{
-  position: relative;
-  margin-top: 40px;
-  height: 550px;
-  width: calc(100% / 3);
-  background-image: url(../img/profile.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 30%;
-}
-
-.text-content1{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 30%;
   text-align: center;
-  line-height: 25px;
 }
 
-h2.green{
-  margin-bottom: 80px;
+.part .img-left{
+  height: 140px;
+}
+
+.part h2{
+  margin-top: 20px;
   color: #7CBB00;
+  min-height: 70px;
 }
 
+.part hr{
+  width: 30px;
+  margin: 10px auto;
+  color: lightgrey;
+}
+
+.part.center{
+  margin: 0 5%;
+}
 
 /* linea divisoria */
 .divisor{
-  border-bottom: 4px solid black;
+  border-bottom: 1px solid #7F7F7F;
 }
 
-/* contenuto inferiore del main (content2) */
-.content2{
-  height: 450px;
-  margin: 0 auto;
-  background-color: brown;
+/* contenuto inferiore del main (content) */
+
+
+footer{
+  background-color: grey;
 }
