@@ -11,6 +11,11 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* float left */
+.float-left{
+  float: left;
+}
+
 /* clearfix main */
 .clearfix::after{
   content: '';
@@ -89,11 +94,16 @@ header{
   float: right;
 }
 
+.menu-right a:first-child{
+  color: rgba(255,255,255,.5);
+}
+
 .menu-right a:nth-child(2){
-  border: 1px solid white;
+  border: 1px solid #4e8cb6;
   border-radius: 4px;
   /* utilizzo di un padding interno */
   padding: 10px 35px;
+  opacity: 0.9;
 }
 /* utilizzo di un padding con span (oppure regola precedente)
 span{
@@ -134,18 +144,18 @@ a.button-banner{
 .text-topbanner{
   text-align: center;
   padding: 30px;
-  background-color: #D3D3D3;
+  background-color: #f9f9f9;
 }
 
 .text-topbanner h3{
-  color: #a5a5a5;
+  color: #999;
   margin-top: 5px;
 }
 
-/* contenuto superiore del main */
-.content-main{
+/* contenuto del main (content1) */
+.content1-main{
   width: 80%;
-  margin: 10px auto 30px;
+  margin: 10px auto 30px auto;
 }
 
 .part{
@@ -165,9 +175,10 @@ a.button-banner{
 }
 
 .part hr{
-  width: 30px;
+  width: 32px;
   margin: 10px auto;
-  color: lightgrey;
+  color: #373a3c;
+  opacity: 0.3;
 }
 
 .part.center{
@@ -176,10 +187,54 @@ a.button-banner{
 
 /* linea divisoria */
 .divisor{
-  border-bottom: 1px solid #7F7F7F;
+  margin: 40px 5px;
+  border: 1px solid rgba(0,0,0,.1);
 }
 
-/* contenuto inferiore del main (content) */
+/* contenuto del main (content2) */
+.content2-main{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.part-img, .part-right{
+  width: 50%;
+}
+
+.part-img img{
+  height: 300px;
+  margin-left: 40px;
+}
+
+.part-right{
+  position: relative;
+  height: 300px;
+}
+
+.part-text{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.part-text h2{
+  line-height: 40px;
+  font-size: 30px;
+  color: #4a4a4a;
+}
+
+.part-text p{
+  margin: 20px 0;
+}
+.part-text a{
+  color: #98c8f8;
+}
+
+
+
+
 
 
 footer{
